@@ -8,8 +8,32 @@
     <title>Email Subscribe</title>
 </head>
 <body>
-    <div class="flex justify-center items-center h-screen bg-zinc-700">Hello
-        
+    <!--Background Container-->
+    <div class="flex justify-center items-center h-screen bg-zinc-700">
+        <!--Card-->
+        <div class="bg-zinc-800 rounded-lg p-2 mx-6">
+            <!-- Flex Container -->
+            <div class="flex flex-col md:flex-row">
+                <!-- Image -->
+                <img src="./images/image.jpg" alt=""
+                    class="h-80 rounded-2xl md:h-64  md:rounded-l-xl md:rounded-r-none object-contain hover:scale-105 duration-200">
+                <!-- Content-->
+                <div class="p-6">
+                    <h2 class="font-serif font-semibold text-white text-md text-center md:text-xl">
+                    Get diet and fitness tips in your inbox
+                    </h2>
+                    <p class="text-white max-w-xs my-4 text-center md:text-left text-xs tracking-wide leading-5">Eat better and exercise better. Sign up for the Diet&Fitness newsletter.
+                    </p>
+                    <div class="flex flex-col md:flex-row space-y-4 md:space-x-2 md:space-y-0">
+                        <input type="text" placeholder="Enter your email address" class="bg-inherit border border-zinc-600 p-2 text-center text-white placeholder:text-xs placeholder:text-center
+                        md:text-left placeholder:md:text-left focus:outline-none"
+                        />
+                        <button class="text-xs rounded-lg text-zinc-900 bg-lime-500 px-5 py-3 hover:text-white hover:bg-lime-700 duration-200 font-semibold">Subscribe</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </div>
 </body>
 </html>
