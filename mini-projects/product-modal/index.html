@@ -11,26 +11,26 @@
     <!--Global Container-->
     <div class="flex justify-center items-center bg-slate-200 min-h-screen">
         <!--Pricing Card Container-->
-        <div class="flex flex-col space-y-4 p-6 m-3 bg-white rounded-2xl shadow-lg">
+        <div class="flex flex-col space-y-4 p-6 m-3 bg-white rounded-2xl shadow-lg md:flex-row md:space-y-0 md:space-x-10">
             <!--Product Image Container-->
             <div class="w-60 mx-auto">
                 <img src="./images/headphone.png" class="hover:scale-110 transition-all duration-200 " alt="headphone-image">
             </div>
-        
-            <!--Shipping label and title Container-->
-            <div class="flex flex-col space-y-4 items-center justify-center">
+            <div class="flex flex-col space-y-4">
+                <!--Shipping label and title Container-->
+            <div class="flex flex-col space-y-4 items-center justify-center md:justify-start md:items-start">
                 <!--Label Containter-->
                 <div class="inline-block bg-black text-white rounded-2xl py-1 px-2 text-sm">
                     Free Shipping
                 </div>
                 <!--Product Title Container-->
-                <p class="text-center align-center font-medium text-2xl">
+                <p class="text-center align-center font-medium text-2xl md:text-left">
                     Razer Kraken Kitty Edt Gaming Headset Quartz
                 </p>
             </div>
             <!--Pricing Container-->
-            <div class="flex flex-col space-y-4 justify-center items-center text-center">
-                <p class="line-through">$799</p>
+            <div class="flex flex-col space-y-4 justify-center items-center text-center md:items-start md:justify-start md:text-left">
+                <p class="line-through md:text-left">$799</p>
                 <h2 class="text-5xl font-bold">$599</h2>
                 <p class="text-xs font-light text-gray-400">This offer is valid until April 3rd or as long as stocks last!
                 </p>
@@ -49,18 +49,20 @@
                 <p class="text-sm">50+ pcs. in stock</p>
             </div>
             <!--Bottom Buttons Container-->
-            <div class="flex flex-col space-y-4">
+            <div class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
                 <!--Add to Cart Bottom Button-->
-                <button class="px-5 py-3 w-full flex justify-center items-center rounded-xl border-4 border-slate-300 space-x-2 hover:scale-105 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-150">
+                <button class="px-5 py-3 w-full flex justify-center items-center rounded-xl border-4 border-slate-300 hover:scale-105 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-150">
                     <img src="./images/weight.png" alt="" class="w-8">
                     <p class="text-sm">Add to Cart</p>
                 </button>
                 <!--Add to Wishlist Bottom Button-->
-                <button class="px-5 py-3 w-full flex justify-center items-center rounded-xl border-4 border-slate-300 space-x-2 hover:scale-105 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-150">
+                <button class="px-5 py-3 w-full flex justify-center items-center rounded-xl border-4 border-slate-300 hover:scale-105 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-150">
                     <img src="./images/heart.png" alt="" class="w-8">
                     <p class="text-sm">Add to Wishlist</p>
                 </button>
             </div>
+            </div>
+            
         </div>
     </div>
 </body>
