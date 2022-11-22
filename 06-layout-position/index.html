@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TailwindCSS</title>
+  </head>
+  <body>
+    <!-- Positioning -->
+    <div class="relative bg-red-400 h-24 w-1/2 mx-auto">
+      <p>Parent Element</p>
+      <div class="absolute bottom-0 right-0 bg-red-700 h-8">
+        <p>Absolute Child</p>
+      </div>
+    </div>
+    <!-- Top left corner -->
+    <div class="relative bg-lime-400 h-36 w-36">
+      
+      <div class="absolute top-0 left-0 bg-lime-800 h-12 w-12">
+      </div>
+    </div>
+    <!-- Top right corner -->
+    <div class="relative bg-fuchsia-200 h-44 w-44 mx-auto">
+      <div class="absolute top-0 right-0 bg-fuchsia-700 h-16 w-16"></div>
+    </div>
+    <!-- Bottom left corner -->
+    <div class="relative bg-fuchsia-200 h-44 w-44 ml-96 ">
+      <div class="absolute bottom-0 left-0 bg-fuchsia-700 h-16 w-16"></div>
+    </div>
+    <!-- Bottom right corner -->
+    <div class="relative bg-fuchsia-200 h-44 w-44">
+      <div class="absolute bottom-0 right-0 bg-fuchsia-700 h-16 w-16"></div>
+    </div>
+    <!-- Span top edge -->
+    <div class="relative bg-fuchsia-200 h-44 w-44 mx-auto">
+      <div class="absolute top-0 inset-x-0 bg-fuchsia-700 h-16"></div>
+    </div>
+    <!-- Span left edge -->
+    <div class="relative bg-fuchsia-200 h-44 w-44 mx-auto mt-12">
+      <div class="absolute left-0 inset-y-0 bg-fuchsia-700 w-16">
+
+      </div>
+    </div>
+    <!-- Span right edge -->
+    <div class="relative bg-fuchsia-200 h-44 w-44 mx-auto mt-12">
+      <div class="absolute right-0 inset-y-0 bg-fuchsia-700 w-16">
+      </div>
+    </div>
+    <!-- Span bottom edge -->
+    <div class="relative bg-fuchsia-200 h-44 w-44 mx-auto mt-12">
+      <div class="absolute bottom-0 inset-x-0 bg-fuchsia-700 h-16">
+      </div>
+    </div>
+    <!-- Display Classes -->
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ducimus architecto quisquam temporibus doloremque dolor totam accusamus <span class="inline font-bold">THIS IS INLINE</span> expedita nesciunt ipsum voluptatum rem deleniti sint, numquam nobis eos dolorem soluta saepe necessitatibus <span class="inline-block font-bold h-16 w-24 ">THIS IS INLINE BLOCK</span> corrupti voluptate molestias! Laboriosam  nihil veritatis, <span class="block font-bold">THIS IS BLOCK</span> incidunt, fuga repellendus doloremque officia, beatae repudiandae nesciunt asperiores dicta obcaecati voluptates expedita accusantium maxime <span class="hidden font-bold">THIS IS HIDDEN</span> aperiam cumque vero voluptatum quae laudantium nemo a.
+    </div>
+    <!-- Z-Index -->
+    <div class="relative h-36">
+      <div class="absolute w-24 h-24 left-10 bg-cyan-300 z-50">1</div>
+      <div class="absolute w-24 h-24 left-20 bg-cyan-400 z-10">2</div>
+      <div class="absolute w-24 h-24 left-40 bg-cyan-500 z-40">3</div>
+      <div class="absolute w-24 h-24 left-60 bg-cyan-600 z-30">4</div>
+      <div class="absolute w-24 h-24 left-80 bg-cyan-700 z-50">5</div>
+    </div>
+    <!-- Floats -->
+    <div class="w-1/2">
+      <img src="../assets/img/img1.jpg" alt="" class="h-36 w-36 float-right m-8">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi consectetur illo praesentium quod totam voluptas nam. Earum culpa accusantium ipsa qui quaerat, nostrum repellat autem fugiat perspiciatis praesentium, odio nobis?</p>
+    </div>
+  </body>
+</html>
+
+<!-- Position Classes
+      static	    position: static;
+      fixed	      position: fixed;
+      absolute	  position: absolute;
+      relative	  position: relative;
+      sticky	    position: sticky;
+    -->
+
+<!-- Display Classes
+      block	            display: block;
+      inline-block	    display: inline-block;
+      inline	          display: inline;
+      flex	            display: flex;
+      inline-flex	      display: inline-flex;
+      table	            display: table;
+      grid	            display: grid;
+      inline-grid	      display: inline-grid;
+      contents	        display: contents;
+      list-item	        display: list-item;
+      hidden	          display: none;
+    -->
+
+<!-- Z-Index
+      z-0	    z-index: 0;
+      z-10	  z-index: 10;
+      z-20	  z-index: 20;
+      z-30	  z-index: 30;
+      z-40	  z-index: 40;
+      z-50	  z-index: 50;
+      z-auto	z-index: auto;
+    -->
+
+<!-- Float
+      float-right	  float: right;
+      float-left	  float: left;
+      float-none	  float: none;
+    -->
